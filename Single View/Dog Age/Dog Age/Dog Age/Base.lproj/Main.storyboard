@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dog_Age" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's a Dog's Life" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LrH-cn-0oJ">
+                                <rect key="frame" x="20" y="28" width="560" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="NBg-Yb-YXD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="45"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age in years" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nB3-5Q-Dsi">
+                                <rect key="frame" x="159" y="139" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="6wa-cF-FoI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How old is your dog?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcB-sQ-diN">
+                                <rect key="frame" x="20" y="110" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bG0-KC-5kw">
+                                <rect key="frame" x="217" y="183" width="167" height="30"/>
+                                <state key="normal" title="Find age in human years"/>
+                                <connections>
+                                    <action selector="findAge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sBs-J3-Cck"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUQ-KB-IH8">
+                                <rect key="frame" x="20" y="229" width="560" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog-walk" translatesAutoresizingMaskIntoConstraints="NO" id="Pj3-1H-2UA">
+                                <rect key="frame" x="20" y="244" width="560" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="mwq-f4-dMB"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.70251767553286104" green="1" blue="0.85996364272602677" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qcB-sQ-diN" firstAttribute="leading" secondItem="Pj3-1H-2UA" secondAttribute="leading" id="0Oi-JD-orD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nB3-5Q-Dsi" secondAttribute="trailing" constant="324" id="1h5-W5-UKu"/>
+                            <constraint firstItem="qcB-sQ-diN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Go-VK-k92"/>
+                            <constraint firstItem="LrH-cn-0oJ" firstAttribute="leading" secondItem="qcB-sQ-diN" secondAttribute="leading" id="6LB-y7-Oq0"/>
+                            <constraint firstItem="nB3-5Q-Dsi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8we-qO-PpH"/>
+                            <constraint firstItem="nB3-5Q-Dsi" firstAttribute="top" secondItem="qcB-sQ-diN" secondAttribute="bottom" constant="8" id="9Ma-cu-Lj7"/>
+                            <constraint firstItem="Pj3-1H-2UA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CVv-uF-GR3"/>
+                            <constraint firstItem="nB3-5Q-Dsi" firstAttribute="centerX" secondItem="bG0-KC-5kw" secondAttribute="centerX" id="DRa-Td-Frr"/>
+                            <constraint firstItem="qcB-sQ-diN" firstAttribute="leading" secondItem="aUQ-KB-IH8" secondAttribute="leading" id="GAm-Fa-MZX"/>
+                            <constraint firstItem="qcB-sQ-diN" firstAttribute="top" secondItem="LrH-cn-0oJ" secondAttribute="bottom" constant="8" id="GvX-L1-9FU"/>
+                            <constraint firstItem="LrH-cn-0oJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="HwX-Xl-hq9"/>
+                            <constraint firstItem="bG0-KC-5kw" firstAttribute="top" secondItem="nB3-5Q-Dsi" secondAttribute="bottom" constant="8" id="J3Y-BT-gdt"/>
+                            <constraint firstItem="qcB-sQ-diN" firstAttribute="trailing" secondItem="aUQ-KB-IH8" secondAttribute="trailing" id="Jnv-0Z-cd7"/>
+                            <constraint firstItem="bG0-KC-5kw" firstAttribute="top" secondItem="nB3-5Q-Dsi" secondAttribute="bottom" constant="14" id="OO6-C0-MAB"/>
+                            <constraint firstItem="nB3-5Q-Dsi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="139" id="OhC-At-cj2"/>
+                            <constraint firstItem="nB3-5Q-Dsi" firstAttribute="top" secondItem="qcB-sQ-diN" secondAttribute="bottom" constant="8" id="VXU-D9-J9y"/>
+                            <constraint firstItem="nB3-5Q-Dsi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="159" id="Xvo-Ed-Hfr"/>
+                            <constraint firstItem="qcB-sQ-diN" firstAttribute="trailing" secondItem="Pj3-1H-2UA" secondAttribute="trailing" id="ahN-kS-ZxF"/>
+                            <constraint firstItem="aUQ-KB-IH8" firstAttribute="top" secondItem="bG0-KC-5kw" secondAttribute="bottom" constant="16" id="d1L-KF-ihO"/>
+                            <constraint firstItem="bG0-KC-5kw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ec7-e9-q0u"/>
+                            <constraint firstItem="Pj3-1H-2UA" firstAttribute="top" secondItem="aUQ-KB-IH8" secondAttribute="bottom" constant="15" id="jWA-dd-RTm"/>
+                            <constraint firstItem="LrH-cn-0oJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pco-Zv-dS7"/>
+                            <constraint firstItem="Pj3-1H-2UA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u1P-jl-8kL"/>
+                            <constraint firstItem="bG0-KC-5kw" firstAttribute="centerX" secondItem="aUQ-KB-IH8" secondAttribute="centerX" id="vQ5-xM-jFW"/>
+                            <constraint firstItem="bG0-KC-5kw" firstAttribute="top" secondItem="nB3-5Q-Dsi" secondAttribute="bottom" constant="14" id="x4p-J2-9bL"/>
+                            <constraint firstItem="Pj3-1H-2UA" firstAttribute="top" secondItem="aUQ-KB-IH8" secondAttribute="bottom" constant="15" id="ykm-hP-BdG"/>
+                            <constraint firstItem="LrH-cn-0oJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="zG0-Li-eRh"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8we-qO-PpH"/>
+                                <exclude reference="DRa-Td-Frr"/>
+                                <exclude reference="J3Y-BT-gdt"/>
+                                <exclude reference="ec7-e9-q0u"/>
+                                <exclude reference="x4p-J2-9bL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="dogAgeTextField" destination="nB3-5Q-Dsi" id="6OT-dF-fzt"/>
+                        <outlet property="humanAgeLabel" destination="aUQ-KB-IH8" id="JKJ-8s-Vma"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="237" y="313"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dog-walk" width="534" height="663"/>
+    </resources>
+</document>

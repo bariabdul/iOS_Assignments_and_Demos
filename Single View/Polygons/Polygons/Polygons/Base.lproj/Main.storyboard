@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Polygons" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Polygons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YtE-sD-Fx4">
+                                <rect key="frame" x="251" y="28" width="98" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Sides:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0o-Vq-f1Y">
+                                <rect key="frame" x="20" y="62" width="139" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xkr-Pd-udt" userLabel="numberOfSidesLabel">
+                                <rect key="frame" x="569" y="62" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pentagon" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRm-3t-W2H" userLabel="nameLabel">
+                                <rect key="frame" x="507" y="91" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tMJ-rR-Dn3" userLabel="polygonView" customClass="PolygonView" customModule="Polygons" customModuleProvider="target">
+                                <rect key="frame" x="20" y="181" width="560" height="399"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="UuA-5a-Ia3" appends="YES" id="oiA-QQ-qq1"/>
+                                    <outletCollection property="gestureRecognizers" destination="wlK-Qf-v2B" appends="YES" id="kUZ-ke-jA4"/>
+                                    <outletCollection property="gestureRecognizers" destination="hBg-Ro-aJu" appends="YES" id="2gZ-Ve-nUN"/>
+                                    <outletCollection property="gestureRecognizers" destination="UCl-gG-ont" appends="YES" id="ntl-44-pb4"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emt-8h-f3i">
+                                <rect key="frame" x="20" y="91" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minimumValue="3" maximumValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="Qnu-k4-GCz" userLabel="numberOfSidesStepper">
+                                <rect key="frame" x="253" y="132" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepperPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="iXa-FW-uF4"/>
+                                </connections>
+                            </stepper>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YtE-sD-Fx4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="53i-Vs-Vly"/>
+                            <constraint firstItem="tMJ-rR-Dn3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Fns-4c-1uo"/>
+                            <constraint firstItem="emt-8h-f3i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="GYS-G3-Bem"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tMJ-rR-Dn3" secondAttribute="trailing" id="MyM-na-qoO"/>
+                            <constraint firstItem="Qnu-k4-GCz" firstAttribute="top" secondItem="emt-8h-f3i" secondAttribute="bottom" constant="20" id="Qfy-kx-sNb"/>
+                            <constraint firstItem="emt-8h-f3i" firstAttribute="top" secondItem="k0o-Vq-f1Y" secondAttribute="bottom" constant="8" id="Quw-5N-IfO"/>
+                            <constraint firstItem="Xkr-Pd-udt" firstAttribute="top" secondItem="k0o-Vq-f1Y" secondAttribute="top" id="WWa-D9-ZTf"/>
+                            <constraint firstItem="BRm-3t-W2H" firstAttribute="top" secondItem="Xkr-Pd-udt" secondAttribute="bottom" constant="8" id="YSS-b8-WXX"/>
+                            <constraint firstItem="BRm-3t-W2H" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="aZD-pL-rh1"/>
+                            <constraint firstItem="Qnu-k4-GCz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bTB-Yx-pK0"/>
+                            <constraint firstItem="k0o-Vq-f1Y" firstAttribute="top" secondItem="YtE-sD-Fx4" secondAttribute="bottom" constant="7.5" id="bY0-xG-SPF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tMJ-rR-Dn3" secondAttribute="bottom" constant="20" id="cX3-LI-Cyg"/>
+                            <constraint firstItem="k0o-Vq-f1Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="haq-pJ-xfT"/>
+                            <constraint firstItem="YtE-sD-Fx4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hc3-It-Y5j"/>
+                            <constraint firstItem="tMJ-rR-Dn3" firstAttribute="top" secondItem="Qnu-k4-GCz" secondAttribute="bottom" constant="20" id="ofn-Rn-f7v"/>
+                            <constraint firstItem="Xkr-Pd-udt" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="rjh-mp-8z5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="BRm-3t-W2H" id="OmP-DC-XZ1"/>
+                        <outlet property="numberOfSidesLabel" destination="Xkr-Pd-udt" id="Yjv-gb-SSi"/>
+                        <outlet property="polygonView" destination="tMJ-rR-Dn3" id="aZT-Hc-VAj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="UuA-5a-Ia3">
+                    <connections>
+                        <action selector="handlePinch:" destination="tMJ-rR-Dn3" id="WFT-SD-7pL"/>
+                        <outlet property="delegate" destination="tMJ-rR-Dn3" id="yLM-cW-XES"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="wlK-Qf-v2B">
+                    <connections>
+                        <action selector="handleRotation:" destination="tMJ-rR-Dn3" id="quT-72-g69"/>
+                        <outlet property="delegate" destination="tMJ-rR-Dn3" id="ZoX-pW-ZYw"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="hBg-Ro-aJu">
+                    <connections>
+                        <action selector="handleSwipe:" destination="tMJ-rR-Dn3" id="LLq-D5-0XZ"/>
+                        <outlet property="delegate" destination="tMJ-rR-Dn3" id="nWq-hW-aHF"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <tapGestureRecognizer id="UCl-gG-ont">
+                    <connections>
+                        <action selector="handleTap:" destination="tMJ-rR-Dn3" id="SJK-dz-fA3"/>
+                        <outlet property="delegate" destination="tMJ-rR-Dn3" id="IZg-G1-hP6"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="305" y="352"/>
+        </scene>
+    </scenes>
+</document>

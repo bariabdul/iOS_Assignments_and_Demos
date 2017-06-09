@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="digital-7.ttf">
+            <string>Digital-7</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Stopwatch-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n4a-03-pmY">
+                                <rect key="frame" x="0.0" y="507" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="play" id="6Zu-r6-8UB"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="MVX-2t-dk3"/>
+                                    <barButtonItem systemItem="pause" id="LhS-0H-Pgr"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ffJ-no-945"/>
+                                    <barButtonItem systemItem="stop" id="XMT-xV-vbq"/>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 : 00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BW-JM-rMU">
+                                <rect key="frame" x="40" y="289" width="520" height="37"/>
+                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" countDownDuration="60" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZpM-Mb-Chh">
+                                <rect key="frame" x="0.0" y="20" width="600" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="499184060.91575098">
+                                    <!--2016-10-26 14:14:20 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZpM-Mb-Chh" firstAttribute="trailing" secondItem="n4a-03-pmY" secondAttribute="trailing" id="4IW-68-qNd"/>
+                            <constraint firstItem="ZpM-Mb-Chh" firstAttribute="leading" secondItem="n4a-03-pmY" secondAttribute="leading" id="LIh-94-itJ"/>
+                            <constraint firstItem="7BW-JM-rMU" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="20" id="Nf5-qc-oBn"/>
+                            <constraint firstAttribute="trailing" secondItem="n4a-03-pmY" secondAttribute="trailing" id="NyZ-9q-2oA"/>
+                            <constraint firstItem="7BW-JM-rMU" firstAttribute="top" secondItem="ZpM-Mb-Chh" secondAttribute="bottom" constant="53" id="T8Y-vx-IlZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7BW-JM-rMU" secondAttribute="trailing" constant="20" id="meY-g5-S3j"/>
+                            <constraint firstItem="n4a-03-pmY" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="opu-1N-L2V"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="n4a-03-pmY" secondAttribute="bottom" id="vpL-uj-Iog"/>
+                            <constraint firstItem="ZpM-Mb-Chh" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="vuj-AD-Yhs"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Stopwatch" image="first" id="HNj-pD-ZZT"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="25" height="25"/>
+    </resources>
+</document>
